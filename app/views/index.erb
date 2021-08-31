@@ -1,0 +1,7 @@
+<h1>List of all <%= @type %>s:</h1>
+<p>Click any <%= @type %> to view its individual page.</p>
+<ul>
+<% @all.each do |entry| %>
+    <li><a href="/<%= @type %>s/<%= entry.slug %>"><%= entry.name %></a></li>
+<% end %>
+</ul>
